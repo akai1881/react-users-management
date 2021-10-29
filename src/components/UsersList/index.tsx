@@ -42,7 +42,5 @@ export const UsersList: React.FC<IProps> = ({ users, loading, onDelete }) => {
         },
     ];
 
-    console.log(users);
-
     return <MyTable dataSource={users} rowKey="id" columns={columns} loading={loading} pagination={false} />;
 };
